@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#044d30">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_weekDayTextAppearance="@style/CalendarWhiteText"
+        app:mcv_dateTextAppearance="@style/CalendarWhiteText"
+        app:mcv_headerTextAppearance="@style/CalendarWhiteText"
+        app:mcv_selectionColor="#4CAF50" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/infoText"
+        android:layout_weight="1" />
+</LinearLayout>
+
